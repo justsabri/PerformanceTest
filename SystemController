@@ -1,7 +1,0 @@
-
-class SystemController():
-    def __init__(self):
-        pass
-
-    def setCallbacck(self, cb):
-        self.cb = cb
