@@ -8,3 +8,4 @@ class DataAnalyzer():
 
     def handleCsData(self, dataPath: str):
         self.logger.debug("datapath is " + dataPath)
+        return 1,2

@@ -11,7 +11,7 @@ class ReportType(Enum):
 
 def getReportGen(type: ReportType):
     if not isinstance(type, ReportType):
-        raise TypeError(f"Expected an int, but got {type(type).__name__}")
+        raise TypeError(f"Expected a ReportType, but got {type(type).__name__}")
     
     if type == ReportType.CS_REPORT:
         from CSReportGen import CSReportGenImpl
@@ -31,6 +31,14 @@ class RepoortGenBase(ABC):
         self.analyzer = DataAnalyzer()
 
     @abstractmethod
-    def genReport(self, dataPath):
+    def genReport(self, dataPath: str, **kwargs):
+        self.logger.info("default method, should not run this func")
+    
+    @abstractmethod
+    def updateReport(self, index: int, **kwargs):
+        self.logger.info("default method, should not run this func")
+
+    @abstractmethod
+    def saveReport(self):
         self.logger.info("default method, should not run this func")
     
