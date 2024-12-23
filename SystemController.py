@@ -1,9 +1,12 @@
+from ParamManager import ParamManagerImpl
 import ReportGen
 from utils.Utils import singleton
 
 @singleton
 class SystemControllerImpl():
     def __init__(self):
+        self.paramManager = ParamManagerImpl()
+        
         self.cb = {}
         self.reportGens = {}
 

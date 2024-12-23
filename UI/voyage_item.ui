@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>66</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 85, 0);
+font: 75 9pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ff5500;&quot;&gt;工况1：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" colspan="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>浏览文件</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6">
+    <widget class="QLineEdit" name="waterDepth"/>
+   </item>
+   <item row="1" column="7">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>相对风速：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>M/E Load：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>水深</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QLineEdit" name="windDirection"/>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>相对风向：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLineEdit" name="load"/>
+   </item>
+   <item row="1" column="8">
+    <widget class="QLineEdit" name="windSpeed"/>
+   </item>
+   <item row="0" column="1" colspan="4">
+    <widget class="QLineEdit" name="filePath"/>
+   </item>
+   <item row="0" column="8">
+    <widget class="QPushButton" name="resultButton">
+     <property name="text">
+      <string>查看分析结果</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

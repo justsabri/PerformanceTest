@@ -44,7 +44,7 @@ class TimeStampedRotatingFileHandler(RotatingFileHandler):
 
 
 current_logtime = datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + f".{datetime.now().microsecond // 1000:03d}"
-if not os.path.exists('log'):
+if not os.path.exists('log') or not os.path.isdir('log'):
     os.mkdir('log')
 LOG_PATH = f"log/{current_logtime}/"
 os.mkdir(LOG_PATH)
